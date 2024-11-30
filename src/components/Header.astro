@@ -1,0 +1,159 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet"
+/>
+<header class="custom-header">
+  <nav class="nav-container">
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li class="logo">
+        <img src="/image/Panorah Logo.svg" alt="Logo" />
+      </li>
+      <li><a href="/work">Work</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <ul class="sticky-icons">
+    <li>
+      <a href="/"><i class="fas fa-home"></i></a>
+    </li>
+    <li>
+      <a href="/pricing"><i class="fas fa-dollar-sign"></i></a>
+    </li>
+    <li>
+      <a href="/work"><i class="fas fa-briefcase"></i></a>
+    </li>
+    <li>
+      <a href="/contact"><i class="far fa-address-book"></i></a>
+    </li>
+  </ul>
+
+  <style>
+    .custom-header {
+      background-color: white;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 60px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: orange;
+    }
+
+    .nav-links .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-links .logo img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .sticky-icons {
+      display: none;
+    }
+
+    @media (min-width: 769px) {
+      .nav-links {
+        display: flex;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: flex;
+        gap: 40px;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-links a {
+        display: none;
+      }
+
+      .nav-links .logo img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .sticky-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 1000;
+        padding: 20px 10px;
+        background-color: orangered;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+      }
+
+      .sticky-icons li {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      .sticky-icons li:hover {
+        background-color: #ddd;
+      }
+
+      .sticky-icons a {
+        color: black;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</header>

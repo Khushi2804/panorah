@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/Layout.astro";
+---
+
+<BaseLayout>
+  <div class="background-section">
+    <p style="font-size: 1.7rem;text-align: justify; ">
+      Your gateway to exceptional customer relationship management solutions! We
+      understand that every business is unique, which is why we offer flexible
+      and competitive pricing plans tailored to meet your specific needs.
+      Whether you're a small startup or a large enterprise, our CRM solutions
+      are designed to help you enhance customer relationships, streamline
+      operations, and drive sustainable growth. Explore our range of affordable
+      plans below to find the perfect fit for your organization and discover how
+      our powerful CRM tools can transform the way you engage with customers and
+      boost your business success.
+    </p>
+    <div class="form-container">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="company" placeholder="Company" required />
+        <textarea name="message" placeholder="Message" rows="4" required
+        ></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </div>
+</BaseLayout>

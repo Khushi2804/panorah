@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="https://path-to-your-font/black-mango.css" />
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo and Company Info -->
+    <div class="footer-left">
+      <img
+        src="/image/Panorah Log.svg"
+        alt="Panorah Logo"
+        class="footer-logo"
+      />
+      <img src="/image/Panorahh.svg" alt="Panorah Logo" class="footer-log" />
+      <p>
+        &copy; 2024 Ordnungskraft Software Development. All Rights Reserved. <a
+          href="#"
+          class="footer-link">Privacy Policy</a
+        >
+      </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-right">
+      <h3>Contact</h3>
+      <p>
+        Mail Us- <a href="mailto:hello@ordnungskraftsoftwaredev.com"
+          ><br />hello@ordnungskraftsoftwaredev.com</a
+        >
+      </p>
+      <p>Call Us- <a href="tel:9498276658"><br />9498276658</a></p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* Footer Styling */
+
+  .footer {
+    height: 45vh;
+    width: 100%;
+    background: linear-gradient(to right, #fe8200, #fe4d00);
+    clip-path: polygon(100% 1%, 100% 100%, 44% 100%, 0% 100%, 0 30%, 36% 60%);
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+    overflow-x: hidden !important;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* width: auto; */
+  }
+
+  /* Left Section */
+  .footer-left {
+    flex: 1;
+  }
+
+  .footer-logo {
+    width: 80px;
+    margin-top: 22%;
+  }
+  .footer-log {
+    width: 180px;
+    margin-left: 7%;
+  }
+
+  .footer-left p {
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-link {
+    color: white;
+    text-decoration: underline;
+  }
+
+  /* Right Section */
+  .footer-right {
+    flex: 1;
+    text-align: right;
+  }
+
+  .footer-right h3 {
+    margin-top: 10%;
+    /* margin-right: 30%; */
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer-right p {
+    font-size: 17px;
+    margin-left: 400px;
+    color: white;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 400px;
+    gap: 20px;
+  }
+
+  .footer-social:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+  }
+
+  .footer-social {
+    /* background-color: white; */
+    /* color: #fe4d00; */
+    /* width: 50px;
+    height: 50px;
+    display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border-radius: 50%; */
+    font-size: 25px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-social:hover {
+    transform: scale(1.05);
+  }
+</style>

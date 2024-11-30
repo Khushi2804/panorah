@@ -1,0 +1,22 @@
+---
+import Header from "../components/Header.astro";
+---
+
+<html>
+  <head>
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <title>Panorah Website</title>
+  </head>
+  <body>
+    <Header
+      siteTitle="My Website"
+      navLinks={[
+        { text: "Home", href: "/" },
+        { text: "About", href: "/about" },
+        { text: "Services", href: "/services" },
+        { text: "Contact", href: "/contact" },
+      ]}
+    />
+    <slot />
+  </body>
+</html>
