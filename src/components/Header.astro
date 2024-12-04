@@ -9,7 +9,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/pricing">Pricing</a></li>
       <li class="logo">
-        <img src="/image/Panorah Logo.svg" alt="Logo" />
+        <a href="/"><img src="/image/Panorah Logo.svg" alt="Logo" /></a>
       </li>
       <li><a href="/work">Work</a></li>
       <li><a href="/contact">Contact</a></li>
@@ -37,7 +37,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
       width: 100%;
     }
 
@@ -53,6 +53,7 @@
       gap: 60px;
       margin: 0;
       padding: 0;
+      gap: 100px;
     }
 
     .nav-links li {
@@ -62,7 +63,7 @@
 
     .nav-links a {
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 17px;
       font-weight: bold;
       color: black;
       transition: color 0.3s ease;
@@ -109,13 +110,19 @@
     }
 
     @media (max-width: 480px) {
-      .nav-links a {
-        display: none;
-      }
+      @media (max-width: 480px) {
+        .nav-links a {
+          display: none;
+        }
 
-      .nav-links .logo img {
-        width: 50px;
-        height: 50px;
+        .nav-links .logo a {
+          display: block; /* Ensure the logo link is visible */
+        }
+
+        .nav-links .logo img {
+          width: 50px; /* Adjust as necessary for mobile view */
+          height: 50px;
+        }
       }
 
       .sticky-icons {
@@ -129,7 +136,7 @@
         transform: translateY(-50%);
         z-index: 1000;
         padding: 20px 10px;
-        background-color: orangered;
+        background-image: linear-gradient(90deg, #fe4d00, #fe8200);
         border-top-right-radius: 40px;
         border-bottom-right-radius: 40px;
       }

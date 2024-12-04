@@ -1,139 +1,243 @@
-<link rel="stylesheet" href="https://path-to-your-font/black-mango.css" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<footer class="footer">
-  <div class="footer-container">
-    <!-- Logo and Company Info -->
-    <div class="footer-left">
-      <img
-        src="/image/Panorah Log.svg"
-        alt="Panorah Logo"
-        class="footer-logo"
-      />
-      <img src="/image/Panorahh.svg" alt="Panorah Logo" class="footer-log" />
-      <p>
-        &copy; 2024 Ordnungskraft Software Development. All Rights Reserved. <a
-          href="#"
-          class="footer-link">Privacy Policy</a
-        >
-      </p>
-    </div>
+    <title>Footer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Mango&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Contact Info -->
-    <div class="footer-right">
-      <h3>Contact</h3>
-      <p>
-        Mail Us- <a href="mailto:hello@ordnungskraftsoftwaredev.com"
-          ><br />hello@ordnungskraftsoftwaredev.com</a
-        >
-      </p>
-      <p>Call Us- <a href="tel:9498276658"><br />9498276658</a></p>
-      <div class="footer-social">
+    <style>
+      body {
+        margin: 0;
+        font-family: "Nunito", Arial, sans-serif;
+      }
+
+      /* General Footer Styling */
+      footer {
+        background-image: linear-gradient(90deg, #fe4d00, #fe8200);
+        color: #fff;
+        padding: 40px 20px;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: center;
+        height: auto;
+      }
+
+      /* Responsive Flexbox Row */
+      .row {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      /* Column Styling */
+      .col {
+        flex-basis: 30%; /* Default for larger screens */
+        text-align: center;
+        padding: 10px;
+      }
+
+      .col h4 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .boldd {
+        font-weight: bold;
+
+        font-family: "Black Mango", sans-serif;
+      }
+
+      .col a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+        transition: color 0.3s;
+      }
+
+      .khu {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+        transition: color 0.3s;
+        cursor: pointer;
+      }
+
+      .col a:hover,
+      .khu:hover {
+        color: #5f8911;
+      }
+
+      /* Logo */
+      .logo {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .big {
+        font-size: 20px;
+      }
+
+      /* Social Icons */
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        color: white;
+        font-size: 25px;
+        transition:
+          transform 0.3s ease,
+          filter 0.3s ease;
+      }
+
+      .social-icons a:nth-child(1):hover {
+        color: #0077b5;
+      }
+
+      .social-icons a:nth-child(2):hover {
+        color: #1da1f2;
+      }
+
+      .social-icons a:nth-child(3):hover {
+        color: #e4405f;
+      }
+
+      .social-icons a:nth-child(4):hover {
+        color: #4267b2;
+      }
+
+      /* Footer Links */
+      .footer-links {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      .footer-links a:hover {
+        color: #5f8911;
+      }
+
+      /* Copyright */
+      .copyright {
+        margin-top: 20px;
+        font-size: 12px;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .logo {
+          width: 250px; /* Smaller logo for very small screens */
+        }
+        .col {
+          flex-basis: 100%; /* Full width for smaller screens */
+          text-align: center;
+        }
+
+        .social-icons {
+          margin-top: 30px;
+          gap: 20px; /* Reduce gap for smaller screens */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          width: 250px; /* Smaller logo for very small screens */
+        }
+
+        .big {
+          font-size: 18px; /* Slightly smaller text */
+        }
+
+        .social-icons a {
+          font-size: 20px; /* Smaller icons */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="/image/Group 18.svg" class="logo" alt="Growthawk Logo" />
+        </div>
+        <div class="col" style="font-size: 16px;">
+          <h4><span class="boldd">Useful Links</span><br /></h4>
+          <a href="/gdpr">GDPR Compliance</a>
+          <a href="/datasec">Data Security</a>
+          <a href="/terms">Terms and Conditions</a>
+          <a href="/refund">Refund</a>
+          <a href="cancellation">Cancellation</a>
+          <a href="/anti-spam">Anti Spam</a>
+          <a href="/legal">Legal</a>
+          <a href="/policy">Policy</a>
+        </div>
+        <div class="col">
+          <h4 style="font-size: 23px;">
+            <span class="boldd">Contact</span><br />
+          </h4>
+          <ul>
+            <li style="font-size: 18px;">
+              <span class="big">Mail Us-</span><br /><a
+                href="mailto:hello@ordnungskraftsoftwaredev.com"
+                ><span class="khu"> hello@ordnungskraftsoftwaredev.com</span><br
+                /></a
+              >
+            </li>
+            <li style="font-size: 18px;">
+              <span class="big">Call Us-</span><br /><span class="khu"
+                >9998776655</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="social-icons">
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
       </div>
-    </div>
-  </div>
-</footer>
 
-<style>
-  /* Footer Styling */
+      <div class="footer-links">
+        <a href="./privatepolicy" style="text-decoration: underline;"
+          >Privacy Policy</a
+        >
+      </div>
 
-  .footer {
-    height: 45vh;
-    width: 100%;
-    background: linear-gradient(to right, #fe8200, #fe4d00);
-    clip-path: polygon(100% 1%, 100% 100%, 44% 100%, 0% 100%, 0 30%, 36% 60%);
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
-    color: white;
-    overflow-x: hidden !important;
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* width: auto; */
-  }
-
-  /* Left Section */
-  .footer-left {
-    flex: 1;
-  }
-
-  .footer-logo {
-    width: 80px;
-    margin-top: 22%;
-  }
-  .footer-log {
-    width: 180px;
-    margin-left: 7%;
-  }
-
-  .footer-left p {
-    font-size: 17px;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .footer-link {
-    color: white;
-    text-decoration: underline;
-  }
-
-  /* Right Section */
-  .footer-right {
-    flex: 1;
-    text-align: right;
-  }
-
-  .footer-right h3 {
-    margin-top: 10%;
-    /* margin-right: 30%; */
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-  }
-
-  .footer-right p {
-    font-size: 17px;
-    margin-left: 400px;
-    color: white;
-  }
-
-  .footer-social {
-    margin-top: 10px;
-    display: flex;
-    margin-left: 400px;
-    gap: 20px;
-  }
-
-  .footer-social:hover {
-    transform: scale(1.2);
-    filter: brightness(1.5);
-  }
-
-  .footer-social {
-    /* background-color: white; */
-    /* color: #fe4d00; */
-    /* width: 50px;
-    height: 50px;
-    display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* border-radius: 50%; */
-    font-size: 25px;
-    font-weight: bold;
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer-social:hover {
-    transform: scale(1.05);
-  }
-</style>
+      <div class="copyright" style="font-size: 17px;font-weight: bold;">
+        <a href="/">
+          <span class="color" style="color: orange;text-decoration: underline;"
+            >&copy; 2024 Ordnungskraft Software Development.</span
+          ></a
+        >
+      </div> All Rights Reserved.
+    </footer>
+  </body>
+</html>

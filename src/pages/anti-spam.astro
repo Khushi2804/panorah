@@ -1,0 +1,104 @@
+<!-- <!doctype html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML PDF Viewer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", Arial, sans-serif;
+      }
+
+      .page-content {
+        /* padding: 50px; */
+      }
+
+      .page-wrapper {
+        background: rgb(157, 155, 155);
+        padding: 20px 0;
+      }
+
+      .page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5cm;
+        box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+        width: 21cm;
+        height: 29.7cm;
+        padding: 20mm;
+      }
+      .page-content h2 {
+        font-size: 40px;
+        text-align: left;
+      }
+
+      .page-content p {
+        font-size: 20px;
+        text-align: justify;
+        hyphens: auto;
+        color: gray;
+        line-height: 1.6;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        .page-wrapper {
+          background: none;
+        }
+
+        .page {
+          box-shadow: none;
+          page-break-after: always;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="page">
+        <div class="page-content">
+          <h2>ANTI-SPAM POLICY</h2>
+          <p>
+            This sets forth our policy with regard to the use of “Spam”
+            marketing techniques in connection with Internet Marketing. In the
+            event that we deem you to be in violation of these policies, we
+            shall immediately revoke your membership rights and close any active
+            account.
+          </p>
+          <p>
+            We have a strict policy against spamming. We forbid the sending of
+            unsolicited mass Emails or unsolicited Emails of any kind in
+            connection with the marketing of our programs, products and
+            services.
+          </p>
+          <p>
+            We reserve the right to terminate your account and participation in
+            our programs “for cause” if we deem you to be in violation of our
+            anti-spamming policies. We also reserve the right to suspend your
+            account and participation pending review upon receipt of any
+            complaint or other evidence that you may be engaging in any spamming
+            activity.
+          </p>
+          <p>
+            If you are “spammed” by anyone regarding our products, services, web
+            site, or any other matters, please report this activity to <a
+              href="mailto:legal@panorah.in">legal@panorah.in</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

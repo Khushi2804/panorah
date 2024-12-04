@@ -1,0 +1,34 @@
+<style>
+  .page-wrapper {
+    background: rgb(157, 155, 155);
+  }
+
+  .page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    width: 21cm;
+    height: 29.7cm;
+  }
+
+  .page-content {
+    padding: 50px !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+    overflow: hidden;
+    margin: 15mm;
+  }
+
+  @media print {
+    body,
+    .page {
+      background: white;
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+</style>
